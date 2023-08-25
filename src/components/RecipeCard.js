@@ -5,7 +5,7 @@ import { Card } from 'react-bootstrap'
 function RecipeCard({ recipe, onClick }) {
 
   return (
-    <Card className="mb-4" onClick={onClick}>
+    <Card className="mb-4 shadow" onClick={onClick}>
       <Card.Img variant="top" src={recipe.image} alt={recipe.title} />
       <Card.Body>
         <Card.Title>{recipe.title}</Card.Title>
