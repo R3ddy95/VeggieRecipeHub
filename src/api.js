@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_KEY = '21808ee291ff4f90ad8bdf2dafaa8e58';
+const API_KEY = process.env.REACT_APP_API_KEY;
 const BASE_URL = 'https://api.spoonacular.com/recipes';
 
 export const searchRecipes = async (query, params) => {

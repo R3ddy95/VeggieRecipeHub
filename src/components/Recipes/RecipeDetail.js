@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { getRecipeById } from '../api';
+import { getRecipeById } from '../../api';
 import { Container, Row, Col, Button } from 'react-bootstrap';
+import Lottie from 'lottie-web';
+import animationData from './LoadingLottie/Loading.json'; // Importa il tuo file JSON di animazione
 import DOMPurify from 'dompurify';
-import Footer from './Footer';
+import Footer from '../Footer/Footer';
 
 function RecipeDetail() {
   const { id } = useParams();
@@ -22,8 +24,25 @@ function RecipeDetail() {
     fetchRecipe();
   }, [id]);
 
+  useEffect(() => {
+    // Inizializza l'animazione Lottie
+    if (!recipe) {
+      const container = document.getElementById('lottie-container');
+      if (container) {
+        const anim = Lottie.loadAnimation({
+          container,
+          animationData, // Passa il tuo file JSON di animazione qui
+          loop: true,
+        });
+        anim.play();
+      }
+    }
+  }, [recipe]);
+
   if (!recipe) {
-    return <div>Loading...</div>;
+    return (
+      <div id="lottie-container d-flex align-items-center justify-content-center" style={{ width: '200px', height: '200px' }}></div>
+    );
   }
 
   return (
@@ -60,7 +79,7 @@ function RecipeDetail() {
         </Col>
         <Col>
           <p>
-            <strong>Price per Serving</strong> {recipe.pricePerServing}
+            <strong>Price per Serving</strong> ${parseFloat(recipe.pricePerServing / 100).toFixed(2)}
           </p>
         </Col>
         <Col>
@@ -87,11 +106,13 @@ function RecipeDetail() {
       <Row className="ingredients">
         <Col>
           <h3 className="text-center">Ingredients</h3>
-          <ul className="recipe-ingredients list-group">
+          <div className="d-flex justify-content-center align-items-center">
+          <ul className="recipe-ingredients list-group d-inline-block">
             {recipe.extendedIngredients.map((ingredient) => (
               <li className='list-group-item' key={ingredient.id}>{ingredient.original}</li>
             ))}
           </ul>
+          </div>
         </Col>
       </Row>
       <Row className='instructions'>

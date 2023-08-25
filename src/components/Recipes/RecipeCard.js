@@ -1,5 +1,5 @@
 import React from 'react';
-import '../App.css';
+import '../../App.css';
 import { Card } from 'react-bootstrap'
 
 function RecipeCard({ recipe, onClick }) {
@@ -8,7 +8,7 @@ function RecipeCard({ recipe, onClick }) {
     <Card className="mb-4 shadow" onClick={onClick}>
       <Card.Img variant="top" src={recipe.image} alt={recipe.title} />
       <Card.Body>
-        <Card.Title>{recipe.title}</Card.Title>
+        <Card.Title className="text-center">{recipe.title}</Card.Title>
       </Card.Body>
     </Card>
   );

@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './components/Home';
-import RecipeDetail from './components/RecipeDetail';
+import RecipeDetail from './components/Recipes/RecipeDetail';
 
 function App() {
   return (
