@@ -43,4 +43,29 @@ body {
   justify-content: space-between;
 }
 
-/* Aggiungi altre regole di stile personalizzate qui */
+/* RecipeDetail */
+
+.recipe-title {
+  margin-top: 20px;
+}
+
+.recipe-image {
+  margin-top: 20px;
+  max-width: 100%;
+}
+
+.recipe-description {
+  margin-top: 20px;
+  font-style: italic;
+}
+
+.recipe-ingredients {
+  margin-top: 20px;
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.recipe-instructions {
+  margin-top: 20px;
+}
+

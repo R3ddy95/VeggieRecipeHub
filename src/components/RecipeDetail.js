@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { getRecipeById } from '../api';
 import { Container, Row, Col } from 'react-bootstrap';
+import DOMPurify from 'dompurify'; // Importa la libreria
 
 function RecipeDetail() {
   const { id } = useParams();
@@ -43,7 +44,8 @@ function RecipeDetail() {
       </Row>
       <Row>
         <Col>
-          <p className="recipe-description">{recipe.summary}</p>
+          {/* Utilizza DOMPurify per sanificare l'HTML */}
+          <div className="recipe-description" dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(recipe.summary) }} />
         </Col>
       </Row>
       <Row>
@@ -67,4 +69,3 @@ function RecipeDetail() {
 }
 
 export default RecipeDetail;
-
