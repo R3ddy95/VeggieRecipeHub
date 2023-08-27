@@ -1,4 +1,4 @@
-# Veggie Recipe Hub ⛅  
+# Veggie Recipe Hub 🌿 
 Veggie Recipe Hub is a web application that provides users with a diverse collection of vegetarian recipes. Users can search and browse through a variety of recipes, get details on ingredients, instructions, and preparation times, and find inspiration to create delicious and healthy dishes. The app features a slider showcasing some of the most interesting recipes, along with an advanced search function to find specific recipes.
 
 ## How it works
@@ -47,7 +47,7 @@ If you don't have it, you can download it here:
 
 ##  Try it!
 Elsewhere, you can simply try it here:
-[VeggieRecipeHub](https://weatherapp-bea52.web.app/)
+[VeggieRecipeHub](https://vegetarianrecipe-1c6fd.web.app/)
 
 ##  License
 [MIT](https://choosealicense.com/licenses/mit/)
