@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { getRandomRecipes } from '../../api';
 import { Carousel, Container } from 'react-bootstrap'; // Importa i componenti Carousel e Container da react-bootstrap
 import { Link } from 'react-router-dom'; // Importa il componente Link per la navigazione
+import placeholderImage from '../../images/Placeholder.png'; // Importa l'immagine del Placeholder se l'immagine reale non è disponibile
 
 function RecipeSlider() {
   // Stato per memorizzare le ricette casuali
@@ -26,7 +27,7 @@ function RecipeSlider() {
               <Link to={`/recipe/${recipe.id}`}>
                 <img
                   className="d-block w-100"
-                  src={recipe.image}
+                  src={recipe.image || placeholderImage}
                   alt={recipe.title}
                 />
                 {/* Mostra il titolo della ricetta come caption */}
