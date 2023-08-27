@@ -19,7 +19,8 @@ Upon selecting a recipe from the search results or the featured recipes slider, 
 ## What i used
 * [React](https://react.dev/)
 * [Node.js](https://nodejs.org/it)
-* [React-Router](https://reactrouter.com/en/main) 
+* [React-Router](https://reactrouter.com/en/main)
+* [React-Hooks](https://legacy.reactjs.org/docs/hooks-intro.html)
 * [Axios](https://axios-http.com/) for the API requests
 * [Redux](https://redux.js.org/) for state management
 * [Bootstrap](https://getbootstrap.com/) as a CSS framework I have opted for
