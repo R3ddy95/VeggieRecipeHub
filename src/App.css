@@ -2,7 +2,7 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 
 body {
-  background: #fff;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(0, 255, 42, 0.05));
   background-size: cover;
   background-attachment: fixed;
 }
@@ -29,10 +29,46 @@ a:active {
   color: rgb(0, 168, 28); /* Colore dei link al clic */
 }
 
+/* Header - Search Bar - Slider */
+
 .header {
-  font-size: 24px;
-  text-align: center;
-  margin-bottom: 20px;
+  position: relative;
+  background-image: url('./images/background-header.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 2rem;
+  color: white;
+  border-bottom: 5px solid #009c68;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(rgba(0, 0, 0, 0.7), transparent);
+}
+
+.header-content {
+  position: relative;
+  z-index: 1;
+}
+
+.error-message {
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  margin-top: 5px;
+  padding: 15px;
+  background-color: rgba(255, 215, 215, 0.75);
+  border: 2px solid #ff0000;
+  border-radius: 10px;
+}
+
+.input-group {
+  margin-top: 35px;
 }
 
 .search-bar {
@@ -49,22 +85,17 @@ a:active {
   margin-right: 10px;
 }
 
-.search-button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  border: none;
-  color: #fff;
-  border-radius: 4px;
-  cursor: pointer;
+.slider {
+  width: 50%;
 }
+
+/* RecipeDetail */
 
 .recipe-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
-/* RecipeDetail */
 
 .recipe-container {
   background-color: rgba(255, 255, 255, 0.5);
@@ -89,7 +120,7 @@ a:active {
 .recipe-description {
   margin-top: 20px;
   padding: 15px;
-  background-color: rgba(241, 241, 241, 0.75);
+  background-color: rgb(238, 238, 238);
   border-radius: 10px;
 }
 
@@ -112,6 +143,7 @@ a:active {
   padding: 15px;
   border: 1px solid rgba(177, 177, 177, 0.582);
   border-radius: 10px;
+  background-color: rgb(255, 255, 255);
 }
 
 /* Footer */
@@ -199,4 +231,14 @@ a:active {
 
 ::-webkit-scrollbar-thumb {
   background-color: #15664b;
+}
+
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+
+  .slider {
+    width: 100%;
+  }
+
 }

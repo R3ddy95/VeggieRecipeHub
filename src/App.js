@@ -7,7 +7,10 @@ function App() {
   return (
     <Router>
       <Switch>
+        {/* La Route per la pagina principale (Home) */}
         <Route path="/" exact component={Home} />
+
+        {/* La Route per la visualizzazione dei dettagli delle ricette */}
         <Route path="/recipe/:id" component={RecipeDetail} />
       </Switch>
     </Router>
