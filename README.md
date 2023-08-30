@@ -1,3 +1,7 @@
+<meta name="title" content="Veggie Recipe Hub">
+<meta name="description" content="Veggie Recipe Hub is a web application that provides users with a diverse collection of vegetarian recipes.">
+<meta name="keyword" content="Veggie Recipe Hub, VeggieRecipeHub, Vegetarian Recipe, Spoonacular, Spoonacular App, Veggie Recipe Github, Github, R3ddy95, R3ddy95 Github, React">
+
 # Veggie Recipe Hub 🌿 
 Veggie Recipe Hub is a web application that provides users with a diverse collection of vegetarian recipes. Users can search and browse through a variety of recipes, get details on ingredients, instructions, and preparation times, and find inspiration to create delicious and healthy dishes. The app features a slider showcasing some of the most interesting recipes, along with an advanced search function to find specific recipes.
 
