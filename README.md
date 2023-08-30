@@ -35,16 +35,34 @@ If you don't have it, you can download it here:
 [Node.js](https://nodejs.org/it/download/)<br>
 
 ### 1 - Clone the repository
-`git clone https://github.com/R3ddy95/VeggieRecipeHub.git`
+```bash
+
+git clone https://github.com/R3ddy95/VeggieRecipeHub.git
+
+```
 
 ### 2 - Install the dependencies
-`npm install`
+```bash
+
+npm install
+
+```
 
 ### 3 - Build it!
-`npm run build`
+```bash
+
+npm run build
+
+```
 
 ### 4 - Open in the browser
-`npm start` and go to [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```bash
+
+npm start
+
+```
+
+and go to [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ##  Try it!
 Elsewhere, you can simply try it here:
