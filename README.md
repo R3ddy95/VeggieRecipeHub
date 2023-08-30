@@ -55,7 +55,19 @@ npm run build
 
 ```
 
-### 4 - Open in the browser
+### 4 - API
+You need your API Key if you want to work this project, go to [Spoonacular](https://spoonacular.com/food-api/docs) and get one.<br>
+Then Open your Directory folder and create a new file with the name .env and write this code:
+
+```env
+
+REACT_APP_API_KEY=YOUR_API_KEY
+
+```
+
+Replace YOUR_API_KEY With the Key you took on Spoonacular
+
+### 5 - Open in the browser
 ```bash
 
 npm start
